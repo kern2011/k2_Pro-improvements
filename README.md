@@ -13,18 +13,9 @@
 
 *Tracks my forks vs upstream as updates happen there, not here.*
 
-## Firmware & Cartographer Support
+## Firmware
 
-**Recommended Firmware:** 1.1.3.13
-
-> [!WARNING]
-> 1.1.4.x is "compatabile" but the firmware itself has numerous known issues. Timing problems can be exacerbated when using Cartographer.
-
-**Cartographer Support:**
-
-- Supports Cartographer v3 and v4
-- Includes custom flash tool for flashing either version directly on the K2
-- Includes new Cartographer plugin with custom modifications for K2 compatibility and optimizations
+**Firmware Tested: V1.1.6.3** 
 
 ## DISCLAIMER
 
@@ -56,23 +47,13 @@ echo "all" | /usr/bin/nc -U /var/run/wipe.sock
 
 ## Installers
 
-A unified installation menu is *planned*.  For now each feature can be found under the [features](./features/) directory.  A `README.md` and installation script `install.sh` are provided for each option.
+For now each feature can be found under the [features](./features/) directory.  A `README.md` and installation script `install.sh` are provided for each option.
 
 The unified installer will understand inter option dependencies and ensure they are met.
 
-For now, there are two default installations:   **Note either option will take some time and seem to hang at times. Be patient as it is moving lots of files and creating venvs for klipper and moonraker full installs
+Recomended installation:   **Note this will take some time and seem to hang at times. Be patient as it is moving lots of files and creating venvs for klipper and moonraker full installs
 
-- Option 1: `gimme-the-jamin.sh` - Used to install carto **NOTE MUST HAVE CARTO FLASHED AND PLUGGED IN AND READY TO GO** by following instructions [here](https://github.com/Jacob10383/k2-improvements/blob/main/features/cartographer/firmware/README.md) first.
-
-    To run, use the terminal command `sh /mnt/UDISK/root/k2-improvements/gimme-the-jamin.sh`
-
-    After install you will need to calibrate the carto by following instructions [here](https://github.com/Jacob10383/k2-improvements/blob/main/features/cartographer/SETUP.md)
-
-- Option 2: `no-carto.sh` - Use this if you aren't going to use a carto, or don't have your carto yet.
-
-    To run, use the terminal command `sh /mnt/UDISK/root/k2-improvements/no-carto.sh`
-
-They both install the same set of features (those that I use).  The only difference is whether or not the cartographer bits are installed. If you start with no-carto.sh and later get a carto, you can then run the gimme-the-jamin.sh script and it will install all of the necessary carto items appropriately.
+    To run, use the terminal command `sh /mnt/UDISK/root/k2-improvements/recommended.sh`
 
 You are still welcome to hand pick which features you want to install.
 
@@ -82,25 +63,12 @@ Donations are definitely *not required*, they are appreciated.  If you'd like to
 
 ## Features
 
-- [axis_twist_compensation](./features/axis_twist_compensation/README.md)
 - [better init](./features/better-init/README.md)
 - [better root](./features/better-root/README.md) home directory
-- [Cartographer](./features/cartographer/README.md) support
 - installs [Entware](https://github.com/Entware/Entware)
 - updated [Fluidd](./features/fluidd/README.md)
 - updated [Moonraker](./features/moonraker/README.md)
-- [Obico](./features/obico/README.md) - *WIP*
 - implements [SCREWS_TILT_CALCULATE](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe)
-
-And a few quality of life improvement macros
-
-- [MESH_IF_NEEDED](./features/macros/bed_mesh/README.md)
-- [START_PRINT](./features/macros/start_print/README.md)
-- [M191](./features/macros/m191/README.md)
-
-### Bed Leveling
-
-Sadly, many of the K2 beds resemble a taco or valley.  In the [bed_leveling](bed_leveling) folder you will find a python based script and short writeup on how to apply aluminium tape to shim the bed.
 
 ## Credits
 
