@@ -1,4 +1,4 @@
-# K2 Improvements
+# K2_Pro Improvements
 
 TL:DR : Updates Fluidd and Moonraker to more current versions, makes Camera work in Fluidd, implements SCREWS_TILT_CALCULATE, and more.
 None of this is my work besides fixing "screws_tilt_adjust.cfg" for the K2-Pro.
