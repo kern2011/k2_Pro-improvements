@@ -11,7 +11,7 @@
 [![Cartographer](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/Cartographer3D/cartographer3d-plugin/compare/main...jacob10383:cartographer3d-plugin:main&query=$.behind_by&label=Cartographer&suffix=%20commits%20behind&color=blue&style=for-the-badge&logo=github)](https://github.com/jacob10383/cartographer3d-plugin)  
 ![Cartographer Last Update](https://img.shields.io/badge/dynamic/json?url=https://gist.githubusercontent.com/Jacob10383/f94d1bab6f84f53cd0a88e33c528d196/raw/cartographer-last-update.json&query=$.date&label=Last%20Synced&style=flat-square&color=gray)
 
-*Tracks my forks vs upstream as updates happen there, not here.*
+*Tracks - [@Jacob10383](https://github.com/Jacob10383) forks vs upstream as updates happen there, not by [@Jacob10383](https://github.com/Jacob10383).*
 
 ## Firmware
 
@@ -72,6 +72,7 @@ Donations are definitely *not required*, they are appreciated.  If you'd like to
 
 ## Credits
 
+- [@Jacob10383](https://github.com/Jacob10383)
 - [@Guilouz](https://github.com/Guilouz) - standing on the shoulders of giants
 - [@stranula](https://github.com/stranula)
 - [@juliosueiras](https://github.com/juliosueiras)
